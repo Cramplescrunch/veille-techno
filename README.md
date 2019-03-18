@@ -5,4 +5,5 @@ Différentes thématiques seront couvertes :
 - Software engineering 
 - Programming
 - Cybersecurity
+- DevOps
 
