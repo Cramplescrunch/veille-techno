@@ -2,6 +2,7 @@
 Répertoire dédié à la veille technologique.
 
 Différentes thématiques seront couvertes :
-- Software engineering / Programming
+- Software engineering 
+- Programming
 - Cybersecurity
 
