@@ -79,12 +79,12 @@ MongoDB Instance with Authentication
 
 ### Use the Mongo Shell
 
-Display the database :
+#### Display the database :
 ```
 db
 ```
 
-Switch database :
+#### Switch/create database :
 ```
 use <database>
 ```
@@ -116,6 +116,57 @@ db.inventory.insertMany([
    { item: "postcard", qty: 45, status: "A",
        size: { h: 10, w: 15.25, uom: "cm" }, tags: [ "blue" ] }
 ]);
+```
+
+Use `db.collection.insertOne()` to insert a single document.
+
+#### Query Documents
+
+To select all documents in the collection, pass an empty document as the query filter document to the `db.collection.find()` method.
+```
+db.myCollection.find( {} )
+```
+
+To query for documents that match specific equality conditions, pass the find() method a query filter document with the <field>: <value> of the desired documents.
+Example :
+```
+db.myCollection.find( { status: "D" } )
+```
+
+More details at : https://docs.mongodb.com/manual/tutorial/query-documents/
+
+#### Update Documents
+
+Update operations modify existing documents in a collection. 
+MongoDB provides the following methods to update documents of a collection:
+```
+db.collection.updateOne()
+db.collection.updateMany()
+db.collection.replaceOne()
+```
+
+Example :
+```
+db.users.updateMany(
+	{ age: { $lt: 18} }, //update filter
+	{ $set: { status: "reject" }} //update action
+)
+```
+
+#### Delete Documents
+
+Delete operations remove documents from a collection. 
+MongoDB provides the following methods to delete documents of a collection:
+```
+db.collection.deleteOne()
+db.collection.deleteMany()
+```
+
+Example :
+```
+db.users.deleteMany(
+	{ status: "reject" }
+)
 ```
 
 ## Links and sources 
