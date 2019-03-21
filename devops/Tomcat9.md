@@ -16,7 +16,7 @@ Tomcat can be started by executing the following commands :
 ```
 $CATALINA_HOME/bin/startup.sh
 /path/to/tomcat/bin/startup.sh
-
+```
 After a successful startup, the default web-applications included with Tomcat will be available by visiting http://localhost:8080/.
 
 ## Links and sources
