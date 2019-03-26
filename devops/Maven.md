@@ -1,5 +1,10 @@
 # Documentation and memo about Maven
 
+## Installation
+
+// TO DO :
+// Write down the way to setup environment variables for Maven. (cf Tutorialspoint)
+
 ## Documentation
 
 ### Build Lifecycle basics
@@ -43,4 +48,5 @@ The same command can be used in a multi-module scenario (i.e. a project with one
 
 ## Links and sources
 
+- Installation tutorial : https://www.tutorialspoint.com/maven/maven_environment_setup.htm
 - Build lifecycle : https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
